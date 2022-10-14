@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="assets/manifest.json">
-    <title>To Do List</title>
+    <title>Kalender</title>
 
     <script>
         if ("serviceWorker in navigator"){
@@ -19,11 +19,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>ToDo</h1>
-        <button id="add-new-btn">Opret opgave</button>
+        <h1>Kalender</h1>
+        <button id="add-new-btn">Opret event</button>
         <form action="" id="add-new-form">
-            <input type="text" name="" id="new-title" placeholder="TO DO titel" required pattern="[ a-åA-Å0-9]+"><!-- det gør at man kun kan skrive disse tegn -->
-            <input type="text" name="" id="new-text" placeholder="Opret TODO" pattern="[ a-åA-Å0-9]+">
+            <input type="text" name="" id="new-title" placeholder="Begivenhed" required pattern="[æÆøØåÅ a-åA-Å0-9]+"><!-- det gør at man kun kan skrive disse tegn -->
+            <input type="date" name="" id="new-text" placeholder="Dato" pattern="[æÆøØåÅ a-zA-Z0-9]+">
             <input type="submit" value="OK">
         </form>
         <hr><!-- horisontal row -->
