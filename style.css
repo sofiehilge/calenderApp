@@ -1,17 +1,30 @@
 body, html{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 *{
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(assets/ny-baggrund.jpg);
+    height: 1000px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-size: 30px;
+}
 .container{
     max-width: 500px;
     margin: 10px auto;
     padding: 5px;
+    background-color: rgba(211,211,211, 0.5);
+}
+
+h1{
+    font-family: sans-serif;
 }
 
 #add-new-form{
@@ -26,14 +39,64 @@ body, html{
 
 }
 
-#add-new-btn{
-    padding: 10px;   
+input[type=text] {
+    border: 3px solid black;
+    border-radius: 8px;
+    font-size: 20px;
 }
+
+input[type=submit] {
+    border: 3px solid black;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+input[type=date]{
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+#komNU{
+ content:"";
+ display: block;
+ position: absolute;
+ width: 25px;
+ height: 25px;
+ top: 0;
+ border: 2px solid ;
+ border-radius: 3px;
+
+}
+
+#add-new-btn{
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+#delete-btn{
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
 
 #add-new-form.editing-active{
     display: block;
 }
 
+li{
+    list-style: none;
+}
+
+#tasks{
+    display: block;
+    display: inline;
+    font-size: 15px;
+}
 .done{
-    background-color: lightgreen
+    background-color: goldenrod;
+    opacity: 0.7;
 }
