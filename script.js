@@ -22,7 +22,7 @@ addNewBtn.addEventListener("click", function(){
     if(addNewForm.classList.contains("editing-active")){
         //luk formen
         addNewForm.classList.remove("editing-active")
-        this.innerHTML = "Opret opgave" //ændre teksten på knappen
+        this.innerHTML = "Opret event" //ændre teksten på knappen
     }
     else{
         //åbner formen
@@ -39,15 +39,15 @@ addNewForm.addEventListener("submit", function(event){
     let entry = '<li>'
         entry += '<h2>' + title.value + '</h2>'
         entry += '<p>' + text.value +'</p>'
-        entry += '<button onclick="deleteEntry(this.parentNode)">Slet</button>' //vi bliver nødt til at parse this til parent elementet da vi ikke ved hvor mange entrys folk vil lave
-        entry += '<input type="checkbox" name="" id="" onchange="markTask(this.parentNode, this)">' //this referere til parent elementet. kan bruges på variabler som har en addEventListner.
+        entry += '<button id="delete-btn" onclick="deleteEntry(this.parentNode)">Slet</button>' //vi bliver nødt til at parse this til parent elementet da vi ikke ved hvor mange entrys folk vil lave
+        entry += '<input type="checkbox" id="komNU" name="" onchange="markTask(this.parentNode, this)">' //this referere til parent elementet. kan bruges på variabler som har en addEventListner.
     entry += '</li>' //en variablen med en lang string
 
     ul.innerHTML += entry
     saveToStorage()
 
     addNewForm.classList.remove("editing-active") //gør at formen fjernes når man opretter en ny opgave
-    addNewBtn.innerHTML = "Opret opgave"
+    addNewBtn.innerHTML = "Opret event"
 })
 
 
