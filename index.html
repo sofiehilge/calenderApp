@@ -25,49 +25,40 @@
         <h1>Kalender</h1>
         <div class="weekdays">
             <h2 class="mandag">Mandag</h2>
-            <button id="add-new-btn">Opret event</button>
-            <form action="" id="add-new-form">
-                <input type="text" name="" id="new-title" placeholder="Begivenhed" required
-                    pattern="[æÆøØåÅ a-åA-Å0-9]+"><!-- det gør at man kun kan skrive disse tegn -->
-                <label for="appt">Vælg et tidspunkt:</label>
-                <input type="time" name="appt" id="appt" placeholder="Tidspunkt" pattern="[0-9]+">
-                <input type="submit" value="OK">
-            </form>
-            <hr><!-- horisontal row -->
-            <ul id="tasks">
+            <button id="add-new-btn-ma">Opret event</button>
+            <ul id="tasks-ma">
                 <!-- li er rykket ind i javascrips, fordi på den måde skal bruger selv skrive i listen -->
             </ul>
-
             <h2 class="tirsdag">Tirsdag</h2>
-            <button id="add-new-btn">Opret event</button>
-            <form action="" id="add-new-form">
-                <input type="text" name="" id="new-title" placeholder="Begivenhed" required
-                    pattern="[æÆøØåÅ a-åA-Å0-9]+"><!-- det gør at man kun kan skrive disse tegn -->
-                <label for="appt">Vælg et tidspunkt:</label>
-                <input type="time" name="appt" id="appt" placeholder="Tidspunkt" pattern="[0-9]+">
-                <input type="submit" value="OK">
-            </form>
-            <hr><!-- horisontal row -->
-            <ul id="tasks">
+            <button id="add-new-btn-ti">Opret event</button>
+            <ul id="tasks-ti">
                 <!-- li er rykket ind i javascrips, fordi på den måde skal bruger selv skrive i listen -->
             </ul>
-
             <h2 class="onsdag">Onsdag</h2>
-            <button id="add-new-btn">Opret event</button>
-            <form action="" id="add-new-form">
-                <input type="text" name="" id="new-title" placeholder="Begivenhed" required
-                    pattern="[æÆøØåÅ a-åA-Å0-9]+"><!-- det gør at man kun kan skrive disse tegn -->
-                <label for="appt">Vælg et tidspunkt:</label>
-                <input type="time" name="appt" id="appt" placeholder="Tidspunkt" pattern="[0-9]+">
-                <input type="submit" value="OK">
-            </form>
-            <hr><!-- horisontal row -->
-            <ul id="tasks">
+            <button id="add-new-btn-on">Opret event</button>
+            <ul id="tasks-on">
                 <!-- li er rykket ind i javascrips, fordi på den måde skal bruger selv skrive i listen -->
             </ul>
-
             <h2 class="torsdag">Torsdag</h2>
-            <button id="add-new-btn">Opret event</button>
+            <button id="add-new-btn-to">Opret event</button>
+            <ul id="tasks-to">
+                <!-- li er rykket ind i javascrips, fordi på den måde skal bruger selv skrive i listen -->
+            </ul>
+            <h2 class="fredag">Fredag</h2>
+            <button id="add-new-btn-fr">Opret event</button>
+            <ul id="tasks-fr">
+                <!-- li er rykket ind i javascrips, fordi på den måde skal bruger selv skrive i listen -->
+            </ul>
+            <h2 class="lørdag">Lørdag</h2>
+            <button id="add-new-btn-lo">Opret event</button>
+            <ul id="tasks-lo">
+                <!-- li er rykket ind i javascrips, fordi på den måde skal bruger selv skrive i listen -->
+            </ul>
+            <h2 class="søndag">Søndag</h2>
+            <button id="add-new-btn-so">Opret event</button>
+            <ul id="tasks-so">
+                <!-- li er rykket ind i javascrips, fordi på den måde skal bruger selv skrive i listen -->
+            </ul>
             <form action="" id="add-new-form">
                 <input type="text" name="" id="new-title" placeholder="Begivenhed" required
                     pattern="[æÆøØåÅ a-åA-Å0-9]+"><!-- det gør at man kun kan skrive disse tegn -->
@@ -76,50 +67,7 @@
                 <input type="submit" value="OK">
             </form>
             <hr><!-- horisontal row -->
-            <ul id="tasks">
-                <!-- li er rykket ind i javascrips, fordi på den måde skal bruger selv skrive i listen -->
-            </ul>
-
-            <h2 class="Fredag">Fredag</h2>
-            <button id="add-new-btn">Opret event</button>
-            <form action="" id="add-new-form">
-                <input type="text" name="" id="new-title" placeholder="Begivenhed" required
-                    pattern="[æÆøØåÅ a-åA-Å0-9]+"><!-- det gør at man kun kan skrive disse tegn -->
-                <label for="appt">Vælg et tidspunkt:</label>
-                <input type="time" name="appt" id="appt" placeholder="Tidspunkt" pattern="[0-9]+">
-                <input type="submit" value="OK">
-            </form>
-            <hr><!-- horisontal row -->
-            <ul id="tasks">
-                <!-- li er rykket ind i javascrips, fordi på den måde skal bruger selv skrive i listen -->
-            </ul>
-
-            <h2 class="Lørdag">Lørdag</h2>
-            <button id="add-new-btn">Opret event</button>
-            <form action="" id="add-new-form">
-                <input type="text" name="" id="new-title" placeholder="Begivenhed" required
-                    pattern="[æÆøØåÅ a-åA-Å0-9]+"><!-- det gør at man kun kan skrive disse tegn -->
-                <label for="appt">Vælg et tidspunkt:</label>
-                <input type="time" name="appt" id="appt" placeholder="Tidspunkt" pattern="[0-9]+">
-                <input type="submit" value="OK">
-            </form>
-            <hr><!-- horisontal row -->
-            <ul id="tasks">
-                <!-- li er rykket ind i javascrips, fordi på den måde skal bruger selv skrive i listen -->
-            </ul>
-
-            <h2 class="Søndag">Søndag</h2>
-            <button id="add-new-btn">Opret event</button>
-            <form action="" id="add-new-form">
-                <input class="input" type="text" name="" id="new-title" placeholder="Begivenhed" required pattern="[æÆøØåÅ a-åA-Å0-9]+"><!-- det gør at man kun kan skrive disse tegn -->
-                <label class="input" for="appt">Vælg et tidspunkt:</label>
-                <input class="input" type="time" name="appt" id="appt" placeholder="Tidspunkt" pattern="[0-9]+">
-                <input type="submit" value="OK">
-            </form>
-            <hr><!-- horisontal row -->
-            <ul id="tasks">
-                <!-- li er rykket ind i javascrips, fordi på den måde skal bruger selv skrive i listen -->
-            </ul>
+            
         </div>
 
     </div>
