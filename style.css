@@ -29,6 +29,11 @@ h1{
     font-size: 60px;
 }
 
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
 #add-new-form{
     display:none;
 }
@@ -38,12 +43,15 @@ h1{
     padding: 10px;
     margin: 5px 0;
     width: 100%;
+    background-color: rgba(255, 69, 0, 0.4);
 }
 
+/* input felter */
 input[type=text] {
     border: 3px solid black;
     border-radius: 8px;
     font-size: 20px;
+    font-size: 15px;
 }
 
 input[type=submit] {
@@ -56,6 +64,9 @@ input[type=date]{
     border: 3px solid black;
     border-radius: 8px;
 }
+
+/* placeholder baggrund */
+
 
 #add-new-btn{
     padding: 10px;
@@ -95,6 +106,8 @@ li{
 .check {
     display: block;
     position: relative;
+    left: 10px;
+    top: 5px;
     margin-bottom: 10px;
     width: 30px;
     height: 30px;
@@ -120,9 +133,11 @@ li{
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: 27px;
+    width: 27px;
     background-color: goldenrod;
+    border: 3px solid black;
+    border-radius: 8px;
 }
 /* when the checkbox is checked, add a orange background */
 .check input:checked ~ .checkmark {
@@ -143,12 +158,12 @@ li{
 
 /* style the checkmark/indicator */
 .check .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 15px;
+    left: 1px;
+    top: 1px;
+    width: 20px;
     height: 20px;
     background-image: url(assets/check-solid.png);
-    background-size: 15px;
+    background-size: 20px;
     background-repeat: none;
 }
 
